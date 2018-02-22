@@ -5,6 +5,11 @@ Vagrant.configure("2") do |config|
   config.ssh.insert_key = false
   config.vm.synced_folder '.', '/vagrant', type: 'nfs'
 
+# provider=
+# - virtualbox
+# - vmware_workstation
+# - vmware_fusion
+
   # Minimal.
   # $ vagrant up centos7-minimal --provider=<provider>
   config.vm.define "centos7-minimal", autostart: false do |centos7_minimal|
