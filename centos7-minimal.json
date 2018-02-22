@@ -88,7 +88,7 @@
   ],
   "post-processors": [
     {
-      "output": "builds/{{.Provider}}-centos7.box",
+      "output": "builds/centos7-minimal_{{.Provider}}.box",
       "type": "vagrant"
     }
   ]
