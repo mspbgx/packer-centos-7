@@ -3,7 +3,7 @@
     {
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
-      "script": [
+      "scripts": [
         "scripts/software.sh",
         "scripts/gnome.sh",
         "scripts/gnome-software.sh"
