@@ -10,6 +10,11 @@
         ]
     },
     {
+      "type": "ansible-local",
+      "playbook_file": "ansible/main.yml",
+      "galaxy_file": "requirements.yml"
+    },
+    {
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "script": "scripts/cleanup.sh"

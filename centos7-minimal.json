@@ -6,11 +6,6 @@
       "script": "scripts/software.sh"
     },
     {
-      "type": "ansible-local",
-      "playbook_file": "ansible/main.yml",
-      "galaxy_file": "requirements.yml"
-    },
-    {
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "script": "scripts/cleanup.sh"
@@ -29,7 +24,7 @@
       "http_directory": "http",
       "iso_urls": [
         "CentOS-7-x86_64-Minimal-1708.iso",
-        "http://mirrors.ocf.berkeley.edu/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso"
+        "http://mirror.rackspeed.de/centos.org/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso"
       ],
       "iso_checksum_type": "sha256",
       "iso_checksum": "bba314624956961a2ea31dd460cd860a77911c1e0a56e4820a12b9c5dad363f5",
@@ -68,7 +63,7 @@
       "http_directory": "http",
       "iso_urls": [
         "CentOS-7-x86_64-Minimal-1708.iso",
-        "http://mirrors.ocf.berkeley.edu/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso"
+        "http://mirror.rackspeed.de/centos.org/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso "
       ],
       "iso_checksum_type": "sha256",
       "iso_checksum": "bba314624956961a2ea31dd460cd860a77911c1e0a56e4820a12b9c5dad363f5",
